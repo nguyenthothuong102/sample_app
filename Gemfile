@@ -4,6 +4,7 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 ruby "2.6.3"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem "bootstrap-sass", "3.3.7"
 gem "config"
 gem "rails", "~> 6.0.0"
 # Use sqlite3 as the database for Active Record
@@ -11,6 +12,7 @@ gem "sqlite3", "~> 1.4"
 # Use Puma as the app server
 gem "puma", "~> 3.11"
 # Use SCSS for stylesheets
+gem "rails-controller-testing"
 gem "sass-rails", "~> 5"
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem "webpacker", "~> 4.0"
