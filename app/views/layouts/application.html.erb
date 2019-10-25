@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %> | <%= t(".title") %></title>
+    <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,8 +10,11 @@
   </head>
 
   <body>
-    <%= link_to t(".english"), locale:"en" %>
-    <%= link_to t(".vietnamese"), locale:"vi" %>
+    <% if :vi == locale %>
+    <%= link_to t(".lang_en"), locale:"en" %>
+    <% else %>
+    <%= link_to t(".lang_vi"), locale:"vi" %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
