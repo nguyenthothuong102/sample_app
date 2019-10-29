@@ -4,6 +4,7 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 ruby "2.6.3"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem "bootstrap-sass", "3.3.7"
 gem "config"
 gem "rails", "~> 6.0.0"
 # Use sqlite3 as the database for Active Record
@@ -18,6 +19,7 @@ gem "webpacker", "~> 4.0"
 gem "turbolinks", "~> 5"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem "jbuilder", "~> 2.7"
+gem "jquery-rails"
 
 # Use Redis adapter to run Action Cable in production
 gem "rails-i18n"
