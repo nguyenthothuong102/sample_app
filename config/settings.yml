@@ -13,3 +13,7 @@ link12: "http://www.michaelhartl.com/"
 link13: "https://www.railstutorial.org/"
 link14: "http://rubyonrails.org/"
 link15: "rails.png"
+size:
+  max_name: 50
+  max_email: 255
+  min_pass: 6
