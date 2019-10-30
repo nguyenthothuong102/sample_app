@@ -60,3 +60,18 @@ vi:
       sign-up: "Đăng ký"
       text1: "Đăng ký"
       text2: "Đây sẽ là trang đăng ký cho người dùng mới."
+      welcome_user: "Chào mừng bạn đến với Ứng dụng mẫu!"
+      name: "Tên"
+      pass: "Mật khẩu"
+      confirm: "Nhập lại mật khẩu"
+      btn: "Tạo tài khoản"
+    create:
+      welcome_user: "Chào mừng bạn đến với Ứng dụng mẫu!"
+    show:
+      user_error: "Người dùng không tồn tại!"
+  shared:
+    error_messages:
+      count:
+        one: "Form có chứa %{count} lỗi"
+        other: "Form có chứa %{count} lỗi"
+
