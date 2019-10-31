@@ -4,6 +4,10 @@ require 'rails/test_help'
 
 class ActiveSupport::TestCase
   fixtures :all
+
+  def is_logged_in?
+    !session[:user_id].nil?
+  end
   # Run tests in parallel with specified workers
   parallelize(workers: :number_of_processors)
 
