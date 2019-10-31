@@ -1,26 +1,22 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <div class="collapse navbar-collapse" id="navbarsExample09">
-        <ul>
-          <%= link_to t(".content_logo"), root_path, id: "logo" %>
-        </ul>
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <%= link_to t(".text1"), root_path %>
-          </li>
-          <li class="nav-item">
-            <%= link_to t(".text2"), help_path %>
-          </li>
-          <li class="nav-item">
-            <%= link_to t(".text3"), "#" %>
-          </li>
-          <li class="nav-item dropdown">
-            <%= link_to t(".lang_en"), locale:"en" %>
-            <%= link_to t(".lang_vi"), locale:"vi" %>
-          </li>
-        </ul>
-      </div>
+    <%= link_to t(".content_logo"), root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to t(".text1"), root_path %></li>
+        <li><%= link_to t(".text2"), help_path %></li>
+        <% if logged_in? %>
+          <li><%= link_to t(".text7"), "#" %></li>
+          <li><%= link_to t(".text6"), current_user %></li>
+          <li><%= link_to t(".text4"), logout_path, method: :delete %></li>
+        <% else %>
+          <li><%= link_to t(".text3"), login_path %></li>
+        <% end %>
+      </ul>
+      <ul>
+        <li><%= link_to t(".lang_vi"), locale:"vi" %></li>
+        <li><%= link_to t(".lang_en"), locale:"en" %></li>
+      </ul>
     </nav>
   </div>
 </header>

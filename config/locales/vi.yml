@@ -5,10 +5,15 @@ vi:
     header:
       lang_vi: "Tiếng Việt"
       lang_en: "Tiếng Anh"
-      content_logo: "Ứng dụng đơn giản"
+      content_logo: "App"
       text1: "Trang chủ"
       text2: "Trợ giúp"
       text3: "Đăng nhập"
+      text4: "Đăng xuất"
+      text5: "Cài đặt"
+      text6: "Thông tin"
+      text7: "Người dùng"
+      text8: "Tài khoản"
     footer:
       content2: "Mới"
       content3: "Liên hệ"
@@ -61,10 +66,6 @@ vi:
       text1: "Đăng ký"
       text2: "Đây sẽ là trang đăng ký cho người dùng mới."
       welcome_user: "Chào mừng bạn đến với Ứng dụng mẫu!"
-      name: "Tên"
-      pass: "Mật khẩu"
-      confirm: "Nhập lại mật khẩu"
-      btn: "Tạo tài khoản"
     create:
       welcome_user: "Chào mừng bạn đến với Ứng dụng mẫu!"
     show:
@@ -74,4 +75,26 @@ vi:
       count:
         one: "Form có chứa %{count} lỗi"
         other: "Form có chứa %{count} lỗi"
+  sessions:
+    new:
+      sign-in: "Đăng nhập"
+      text1: "Đăng nhập"
+      sign_up: "Đăng ký ngay!"
+      text2: "Người dùng mới?"
+      log_in: "Đăng nhập"
+    create:
+      danger: "Email/mật khẩu không hợp lệ!"
+  helpers:
+    label:
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
+        password_confirmation: "Nhập lại mật khẩu"
+      session:
+        email: "Email"
+        password: "Mật khẩu"
+    submit:
+      user:
+        create: "Tạo tài khoản"
 

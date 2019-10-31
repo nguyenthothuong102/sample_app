@@ -9,6 +9,11 @@ en:
       text1: "Home"
       text2: "Help"
       text3: "Login"
+      text4: "Log out"
+      text5: "Settings"
+      text6: "Profile"
+      text7: "Users"
+      text8: "Account"
     footer:
       content2: "News"
       content3: "Contach"
@@ -59,10 +64,6 @@ en:
       text1: "Sign up"
       text2: "This will be a signup page for new users."
       welcome_user: "Welcome to Sample Application!"
-      name: "Name"
-      pass: "Password"
-      confirm: "Confirmation"
-      btn: "Create my account"
     create:
       welcome_user: "Welcome to the Sample App!"
     show:
@@ -72,3 +73,26 @@ en:
       count:
         one: "The form contain %{count} error"
         other: "The form contain %{count} errors"
+  sessions:
+    new:
+      sign-in: "Log in"
+      text1: "Log in"
+      sign_up: "Sign up now!"
+      text2: "New user?"
+      log_in: "Log in"
+    create:
+      danger: "Invalid email/password combination!"
+  helpers:
+    label:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Confirmation Password"
+      session:
+        email: "Email"
+        password: "Password"
+    submit:
+      user:
+        create: "Create my account"
+
