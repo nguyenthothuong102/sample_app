@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get "sessions/new"
-  get "users/new"
   scope "(:locale)", locale: /en|vi/ do
     root "static_pages#home"
     get "/help", to: "static_pages#help"
@@ -11,6 +9,6 @@ Rails.application.routes.draw do
     get "/login", to: "sessions#new"
     post "/login", to: "sessions#create"
     get "/logout", to: "sessions#destroy"
+    resources :users
   end
-  resources :users
 end

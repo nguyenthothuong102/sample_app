@@ -10,7 +10,7 @@ en:
       text2: "Help"
       text3: "Login"
       text4: "Log out"
-      text5: "Settings"
+      setting: "Settings"
       text6: "Profile"
       text7: "Users"
       text8: "Account"
@@ -59,6 +59,8 @@ en:
       content1: Contact the Ruby on Rails sTutorial about the sample app at the
       content2: "contact page."
   users:
+    danger_login: "Please login."
+    danger_user: "User not exists!"
     new:
       sign-up: "Sign up"
       text1: "Sign up"
@@ -68,6 +70,21 @@ en:
       welcome_user: "Welcome to the Sample App!"
     show:
       user_error: "User not exists!"
+    edit:
+      title: "Edit user"
+      title2: "Update your profile"
+      btn: "Save changes"
+      change: "change"
+    update:
+      success: "Profile updated"
+    index:
+      title: "All users"
+      delete: "Delete"
+    destroy:
+      success: "User deleted"
+    user:
+      delete: "Delete"
+      confirm: "You sure?"
   shared:
     error_messages:
       count:

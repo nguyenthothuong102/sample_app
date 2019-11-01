@@ -6,9 +6,10 @@
         <li><%= link_to t(".text1"), root_path %></li>
         <li><%= link_to t(".text2"), help_path %></li>
         <% if logged_in? %>
-          <li><%= link_to t(".text7"), "#" %></li>
+          <li><%= link_to t(".text7"), users_path %></li>
           <li><%= link_to t(".text6"), current_user %></li>
-          <li><%= link_to t(".text4"), logout_path, method: :delete %></li>
+          <li><%= link_to t(".setting"), edit_user_path(current_user) %></li>
+          <li><%= link_to t(".text4"), logout_path %></li>
         <% else %>
           <li><%= link_to t(".text3"), login_path %></li>
         <% end %>
