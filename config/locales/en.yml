@@ -97,8 +97,11 @@ en:
       sign_up: "Sign up now!"
       text2: "New user?"
       log_in: "Log in"
+      forgot_password: "Forgot password"
+      remember_me: "Remember me"
     create:
       danger: "Invalid email/password combination!"
+      check_email: "The account has not been activated. Please check your email to activate your account."
   helpers:
     label:
       user:
@@ -112,4 +115,47 @@ en:
     submit:
       user:
         create: "Create my account"
+  mailers:
+    ac_acti: "Account activation"
+    activate: "Activate"
+    password_reset: "Password Reset"
+    text1: "Welcome to the Sample App! Click on the link below to activate your account:"
+    text2: "Welcome to the Sample App! Click on the link below to activate your account:"
+    reset: "Reset password"
+    text3: "To reset your password click the link below:"
+    text4: "This link will expire in two hours."
+    text5: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+    text6: "To reset your password click the link below:"
+  account_activations:
+    edit:
+      success: "Account activated!"
+      danger: "Invalid activation link"
+  password_resets:
+    valid_user: "False!"
+    danger_email: "Email Does not exist."
+    edit:
+      title: "Reset password"
+      txt1: "Reset password"
+      email: "Email"
+      password: "Passsword"
+      password_confirmation: "Password Confirmation"
+      update: "Update password"
+    danger_expired: "Password reset has expired."
+    new:
+      title: "Forgot password"
+      txt2: "Forgot password"
+      password_reset: "Password reset"
+      email: "Email"
+      submit: "Submit"
+    create:
+      email_link: "Send an email with instructions for resetting your password"
+      email_notfound: "Email address not found"
+    update:
+      text1: "can't be empty"
+      text2: "Password has been reset."
+      password_has_been_reset: "Password updated successfully"
+      success: "Update successfully"
+  user_mailer:
+    acc_acti: "Account activate successfly!"
+    password_reset: "Password reset!"
 
