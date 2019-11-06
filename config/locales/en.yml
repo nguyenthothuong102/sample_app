@@ -61,6 +61,15 @@ en:
   users:
     danger_login: "Please login."
     danger_user: "User not exists!"
+    following: "Following"
+    followers: "Followers"
+    show_follow:
+      view: "View my profile"
+      microposts: "Microposts: "
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
     new:
       sign-up: "Sign up"
       text1: "Sign up"
@@ -90,6 +99,16 @@ en:
       count:
         one: "The form contain %{count} error"
         other: "The form contain %{count} errors"
+    micropost_form:
+      placeholder: "Soạn bài đăng mới..."
+      post: "Đăng bài"
+      micropost_form_notify: "Maximum file size is 5MB. Please choose a smaller file."
+    stats:
+      following: "%{size} Following"
+      followers: "%{size} Followers"
+    user_info:
+      view: "View my profile"
+      micropost: "micropost"
   sessions:
     new:
       sign-in: "Log in"
@@ -133,6 +152,7 @@ en:
   password_resets:
     valid_user: "False!"
     danger_email: "Email Does not exist."
+    danger: "Email don't exist!"
     edit:
       title: "Reset password"
       txt1: "Reset password"
@@ -150,6 +170,7 @@ en:
     create:
       email_link: "Send an email with instructions for resetting your password"
       email_notfound: "Email address not found"
+<<<<<<< HEAD
     update:
       text1: "can't be empty"
       text2: "Password has been reset."
@@ -159,3 +180,24 @@ en:
     acc_acti: "Account activate successfly!"
     password_reset: "Password reset!"
 
+=======
+    check_expiration:
+      password_reset: "Password reset has expired."
+    update:
+      text1: "can't be empty"
+      text2: "Password has been reset."
+  microposts:
+    create:
+      success: "Micropost created!"
+    micropost:
+      time_posted: "Posted %{time} ago."
+      delete: "delete"
+      question: "You sure?"
+    destroy:
+      success: "Micropost deleted"
+      danger: "False!"
+  relationships:
+    danger: "User does not exist!"
+    danger_nil: "User nil!"
+  valid_user:
+    user_valid: "User don't exist!"
