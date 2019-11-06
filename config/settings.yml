@@ -13,14 +13,19 @@ link12: "http://www.michaelhartl.com/"
 link13: "https://www.railstutorial.org/"
 link14: "http://rubyonrails.org/"
 link15: "rails.png"
+host: localhost:3000
 size:
   max_name: 50
   max_email: 255
   min_pass: 6
   s_80: 80
   s_50: 50
+  s_5: 5
   s_6: 6
   s_10: 10
+  s_140: 140
 session:
   s_1: "1"
 timeout_reset_password: 20
+img:
+  img_ex: "image/jpeg,image/gif,image/png"

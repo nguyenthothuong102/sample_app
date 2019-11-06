@@ -5,7 +5,8 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def show
-    redirect_to root_path && return unless @user.activated?
+    redirect_to root_path  && return unless @user.activated?
+    @microposts = @user.microposts.paginate page: params[:page], per_page: Settings.size.s_10
   end
 
   def new
@@ -28,7 +29,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
+      @user.send_activation_email
       flash[:success] = t ".welcome_user"
       redirect_to @user
     else
@@ -68,7 +69,6 @@ class UsersController < ApplicationController
   def load_user
     @user = User.find_by id: params[:id]
     return if @user
-
     flash[:danger] = t "users.danger_user"
     redirect_to root_path
   end
