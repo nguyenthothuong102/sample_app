@@ -34,6 +34,7 @@ vi:
       text4: "hướng dẫn về Ruby on Rails "
       text3: "ứng dụng mẫu."
       text5: "Đăng ký ngay!"
+      micropost_feed: "Micropost Feed"
     help:
       help: "Trợ giúp"
       content1: "Nhận trợ giúp Ruby on Rails Tutorial tại "
@@ -77,6 +78,8 @@ vi:
       title2: "Cập nhật thông tin của bạn"
       btn: "Lưu thay đổi"
       change: "Thay đổi"
+    show:
+      microposts: "Bài đăng"
     update:
       success: "Cập nhật thành công!"
     index:
@@ -91,6 +94,13 @@ vi:
       count:
         one: "Form có chứa %{count} lỗi"
         other: "Form có chứa %{count} lỗi"
+    micropost_form:
+      placeholder: "Soạn bài đăng mới..."
+      post: "Đăng bài"
+      micropost_form_notify: "Kích thước tệp tối đa là 5MB. Vui lòng chọn một tập tin nhỏ hơn."
+    user_info:
+      view: "Hồ sơ"
+      micropost: "Bài đăng"
   sessions:
     new:
       sign-in: "Đăng nhập"
@@ -98,8 +108,11 @@ vi:
       sign_up: "Đăng ký ngay!"
       text2: "Người dùng mới?"
       log_in: "Đăng nhập"
+      forgot_password: "Quên mật khẩu"
+      remember_me: "Ghi nhớ"
     create:
       danger: "Email/mật khẩu không hợp lệ!"
+      check_email: "Tài khoản chưa được kích hoạt. Vui lòng kiểm tra email để kích hoạt tài khoản của bạn."
   helpers:
     label:
       user:
@@ -113,4 +126,49 @@ vi:
     submit:
       user:
         create: "Tạo tài khoản"
-
+  mailers:
+    ac_acti: "Kích hoạt tài khoản"
+    activate: "kích hoạt"
+    password_reset: "Đặt lại mật khẩu"
+    text1: "Chào mừng bạn đến với Ứng dụng mẫu! Nhấp vào liên kết dưới đây để kích hoạt tài khoản của bạn:"
+    text2: "Chào mừng bạn đến với Ứng dụng mẫu! Nhấp vào liên kết dưới đây để kích hoạt tài khoản của bạn:"
+    reset: "Đặt lại mật khẩu"
+    text3: "Để đặt lại mật khẩu của bạn, nhấp vào liên kết dưới đây:"
+    text4: "Liên kết này sẽ hết hạn trong hai giờ."
+    text5: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
+    text6: "Để đặt lại mật khẩu của bạn, nhấp vào liên kết dưới đây:"
+  account_activations:
+    edit:
+      success: "Kích hoạt tài khoản!"
+      danger: "Liên kết kích hoạt không hợp lệ!"
+  password_resets:
+    edit:
+      title: "Đặt lại mật khẩu"
+      txt1: "Đặt lại mật khẩu"
+      email: "Email"
+      password: "Mật khẩu"
+      password_confirmation: "Nhập lại mật khẩu"
+      update: "Cập nhật mật khẩu"
+    new:
+      title: "Quên mật khẩu"
+      password_reset: "Đặt lại mật khẩu"
+      submit: "Gửi"
+      txt2: "Quên mật khẩu"
+    create:
+      email_link: "Gửi email gửi đi với hướng dẫn đặt lại mật khẩu"
+      email_notfound: "Không tìm thấy địa chỉ email"
+    update:
+      text1: "không thể để trống"
+      text2: "Mật khẩu đã được đặt lại."
+    check_expiration:
+      password_reset: "Đặt lại mật khẩu đã hết hạn."
+  microposts:
+    create:
+      success: "Đăng bài viết thành công!"
+    micropost:
+      time_posted: "Bài đăng %{time} trước."
+      delete: "Xóa"
+      question: "Bạn có chắc chắn?"
+    destroy:
+      danger: "That bai!"
+      success: "Xóa bài đăng thành công!"
