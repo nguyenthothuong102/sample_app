@@ -107,8 +107,8 @@ en:
       post: "Đăng bài"
       micropost_form_notify: "Maximum file size is 5MB. Please choose a smaller file."
     stats:
-      following: "Following"
-      followers: "Followers"
+      following: "%{size} Following"
+      followers: "%{size} Followers"
     user_info:
       view: "View my profile"
       micropost: "micropost"
@@ -153,6 +153,9 @@ en:
       success: "Account activated!"
       danger: "Invalid activation link"
   password_resets:
+    valid_user: "False!"
+    danger_email: "Email Does not exist."
+    danger: "Email don't exist!"
     edit:
       title: "Reset password"
       txt1: "Reset password"
@@ -186,3 +189,33 @@ en:
       danger: "False!"
   relationships:
     danger: "User does not exist!"
+<<<<<<< HEAD
+=======
+    update:
+      text1: "can't be empty"
+      text2: "Password has been reset."
+      password_has_been_reset: "Password updated successfully"
+      success: "Update successfully"
+  user_mailer:
+    acc_acti: "Account activate successfly!"
+    password_reset: "Password reset!"
+    check_expiration:
+      password_reset: "Password reset has expired."
+    update:
+      text1: "can't be empty"
+      text2: "Password has been reset."
+  microposts:
+    create:
+      success: "Micropost created!"
+    micropost:
+      time_posted: "Posted %{time} ago."
+      delete: "delete"
+      question: "You sure?"
+    destroy:
+      success: "Micropost deleted"
+      danger: "False!"
+  relationships:
+    danger: "User does not exist!"
+    danger_nil: "User nil!"
+  valid_user:
+    user_valid: "User don't exist!"

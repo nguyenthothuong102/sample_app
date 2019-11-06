@@ -26,3 +26,9 @@ session:
   s_1: "1"
 img:
   img_ex: "image/jpeg,image/gif,image/png"
+  s_6: 6
+  s_10: 10
+  s_6: 6
+session:
+  s_1: "1"
+timeout_reset_password: 20
