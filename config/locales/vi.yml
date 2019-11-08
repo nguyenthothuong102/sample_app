@@ -10,7 +10,7 @@ vi:
       text2: "Trợ giúp"
       text3: "Đăng nhập"
       text4: "Đăng xuất"
-      text5: "Cài đặt"
+      setting: "Cài đặt"
       text6: "Thông tin"
       text7: "Người dùng"
       text8: "Tài khoản"
@@ -61,6 +61,8 @@ vi:
         với Ruby on Rails Tutorial qua "
       content2: "trang liên hệ."
   users:
+    danger_login: "Hãy đăng nhập."
+    danger_user: "Tài khoản không tồn tại!"
     new:
       sign-up: "Đăng ký"
       text1: "Đăng ký"
@@ -70,6 +72,20 @@ vi:
       welcome_user: "Chào mừng bạn đến với Ứng dụng mẫu!"
     show:
       user_error: "Người dùng không tồn tại!"
+    edit:
+      title: "Đăng ký người dùng."
+      title2: "Cập nhật thông tin của bạn"
+      btn: "Lưu thay đổi"
+      change: "Thay đổi"
+    update:
+      success: "Cập nhật thành công!"
+    index:
+      title: "Tất cả người dùng"
+    destroy:
+      success: "Xóa người dùng thành công!"
+    user:
+      delete: "Xóa người dùng"
+      confirm: "Bạn chắc chứ?"
   shared:
     error_messages:
       count:
