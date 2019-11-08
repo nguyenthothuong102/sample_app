@@ -4,57 +4,54 @@ class UsersController < ApplicationController
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
+  def index
+    @users = User.actived.paginate page: params[:page]
+  end
+
   def show
     @user = User.find_by id: params[:id]
-    return if @user
-    flash[:user_error] = t ".user_error"
-    redirect_to root_path
+    redirect_to root_path  && return unless @user.activated?
   end
 
   def new
     @user = User.new
   end
 
-  def index
-    @users = User.paginate page: params[:page]
-  end
-
   def destroy
-    @user = User.find_by params[:id]
-    @user.destroy
+    if @user.destroy?
     flash[:success] = t ".success"
     redirect_to users_path
+    else
+      render :new
+    end
   end
 
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t ".welcome_user"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t (".please")
+      redirect_to root_path
     else
-      render "new"
+      render :new
     end
   end
 
-  def edit
-    @user = User.find(params[:id])
-  end
+  def edit; end
 
   def update
-    @user = User.find(params[:id])
-    if @user.update_attributes(user_params)
+    if @user.update_attributes user_params
       flash[:success] = t ".success"
       redirect_to @user
     else
-      render "edit"
+      render :edit
     end
   end
 
   private
 
   def admin_user
-    redirect_to(root_path) unless current_user.admin?
+    redirect_to root_path unless @user.admin?
   end
 
   def user_params
@@ -70,7 +67,7 @@ class UsersController < ApplicationController
   end
 
   def load_user
-    @user = User.find_by(id: params[:id])
+    @user = User.find_by id: params[:id]
     return if @user
 
     flash[:danger] = t "users.danger_user"
@@ -78,7 +75,6 @@ class UsersController < ApplicationController
   end
 
   def correct_user
-    @user = User.find(params[:id])
-    redirect_to(root_path) unless current_user?(@user)
+    redirect_to @user unless current_user? @user
   end
 end

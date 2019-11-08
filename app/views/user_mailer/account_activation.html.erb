@@ -1,0 +1,6 @@
+<h1><%= t(".txt1") %></h1>
+<p><%= t(".txt4") %> <%= @user.name %>,</p>
+<p>
+<%= t(".txt2") %>
+</p>
+<%= link_to t(".activate"), edit_account_activation_url(id: @user.activation_token, email: @user.email) %>

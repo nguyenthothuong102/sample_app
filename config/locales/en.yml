@@ -22,6 +22,13 @@ en:
       text2: "Ruby on Rails Tutorial"
       text3: "by"
       text4: "Michael Hartl"
+  user_mailer:
+    account_activation:
+      acctivate: "Activate"
+      txt1: "Ứng dụng mẫu"
+      txt2: "Welcome to the Sample App! Click on the link below to activate your account:"
+      txt3: "Welcome to the Sample App! Click on the link below to activate your account:"
+      txt4: "Hi "
   static_pages:
     home:
       home: "Home"
@@ -68,6 +75,7 @@ en:
       welcome_user: "Welcome to Sample Application!"
     create:
       welcome_user: "Welcome to the Sample App!"
+      please: "Please check your email to activate your account."
     show:
       user_error: "User not exists!"
     edit:
@@ -99,6 +107,8 @@ en:
       log_in: "Log in"
     create:
       danger: "Invalid email/password combination!"
+      activate_mail: "Check your email for the activation link."
+      not_activate: "Account not activated."
   helpers:
     label:
       user:
@@ -112,4 +122,10 @@ en:
     submit:
       user:
         create: "Create my account"
+  mailers:
+    ac_acti: "Account activation"
+  account_activations:
+    edit:
+      success: "Account activated!"
+      danger: "Invalid activation link"
 
