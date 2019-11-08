@@ -4,18 +4,19 @@ class UsersController < ApplicationController
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
-  def show; end
+  def show
+    redirect_to root_path && return unless @user.activated?
+  end
 
   def new
     @user = User.new
   end
 
   def index
-    @users = User.paginate page: params[:page]
+    @users = User.actived.paginate page: params[:page]
   end
 
   def destroy
-    @user.destroy
     if @user.destroy?
       flash[:success] = t ".success"
       redirect_to users_path

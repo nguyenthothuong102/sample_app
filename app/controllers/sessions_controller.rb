@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
     @user = User.find_by email: params[:session][:email].downcase
     if @user&.authenticate params[:session][:password]
       log_in @user
-      params[:session][:remember_me] == "1" ? remember(@user) : forget(@user)
+      params[:session][:remember_me] == Settings.session.s_1 ? remember(@user) : forget(@user)
       redirect_back_or @user
     else
       flash.now[:danger] = t ".danger"
