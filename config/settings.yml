@@ -18,3 +18,6 @@ size:
   max_email: 255
   min_pass: 6
   s_80: 80
+  s_50: 50
+session:
+  s_1: "1"
