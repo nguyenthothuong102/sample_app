@@ -19,8 +19,9 @@ size:
   min_pass: 6
   s_80: 80
   s_50: 50
-  s_6: 6
+  s_5: 5
   s_10: 10
+  s_6: 6
 session:
   s_1: "1"
 timeout_reset_password: 20
