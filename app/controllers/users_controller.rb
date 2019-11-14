@@ -13,7 +13,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.actived.paginate page: params[:page]
+    @users = User.actived.paginate page: params[:page], per_page: Settings.size.s_10
   end
 
   def destroy
