@@ -34,6 +34,7 @@ en:
       text4: "Ruby on Rails Tutorial "
       text3: "sample application."
       text5: "Sign up now!"
+      micropost_feed: "Micropost Feed"
     help:
       help: "Help"
       content1: "Get help on the Ruby on Rails Tutorial at the"
@@ -59,6 +60,7 @@ en:
       content1: Contact the Ruby on Rails sTutorial about the sample app at the
       content2: "contact page."
   users:
+    please: "Success!"
     danger_login: "Please login."
     danger_user: "User not exists!"
     new:
@@ -75,6 +77,8 @@ en:
       title2: "Update your profile"
       btn: "Save changes"
       change: "change"
+    show:
+      microposts: "Microposts"
     update:
       success: "Profile updated"
     index:
@@ -90,6 +94,13 @@ en:
       count:
         one: "The form contain %{count} error"
         other: "The form contain %{count} errors"
+    micropost_form:
+      placeholder: "Soạn bài đăng mới..."
+      post: "Đăng bài"
+      micropost_form_notify: "Maximum file size is 5MB. Please choose a smaller file."
+    user_info:
+      view: "View my profile"
+      micropost: "micropost"
   sessions:
     new:
       sign-in: "Log in"
@@ -133,6 +144,7 @@ en:
   password_resets:
     valid_user: "False!"
     danger_email: "Email Does not exist."
+    danger: "Email don't exist!"
     edit:
       title: "Reset password"
       txt1: "Reset password"
@@ -158,4 +170,22 @@ en:
   user_mailer:
     acc_acti: "Account activate successfly!"
     password_reset: "Password reset!"
-
+    check_expiration:
+      password_reset: "Password reset has expired."
+    update:
+      text1: "can't be empty"
+      text2: "Password has been reset."
+  microposts:
+    create:
+      success: "Micropost created!"
+    micropost:
+      time_posted: "Posted %{time} ago."
+      delete: "delete"
+      question: "You sure?"
+      should_be_less: "should be less than 5MB"
+    destroy:
+      success: "Micropost deleted"
+      danger: "False!"
+  user_mailer:
+    acc_acti: "Account activate sucessfly!"
+    password_reset: "Password reset!"

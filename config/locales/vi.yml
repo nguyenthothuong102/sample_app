@@ -34,6 +34,7 @@ vi:
       text4: "hướng dẫn về Ruby on Rails "
       text3: "ứng dụng mẫu."
       text5: "Đăng ký ngay!"
+      micropost_feed: "Micropost Feed"
     help:
       help: "Trợ giúp"
       content1: "Nhận trợ giúp Ruby on Rails Tutorial tại "
@@ -61,6 +62,7 @@ vi:
         với Ruby on Rails Tutorial qua "
       content2: "trang liên hệ."
   users:
+    please: "Thành công!"
     danger_login: "Hãy đăng nhập."
     danger_user: "Tài khoản không tồn tại!"
     new:
@@ -77,6 +79,8 @@ vi:
       title2: "Cập nhật thông tin của bạn"
       btn: "Lưu thay đổi"
       change: "Thay đổi"
+    show:
+      microposts: "Bài đăng"
     update:
       success: "Cập nhật thành công!"
     index:
@@ -88,9 +92,16 @@ vi:
       confirm: "Bạn chắc chứ?"
   shared:
     error_messages:
-      count:
-        one: "Form có chứa %{count} lỗi"
-        other: "Form có chứa %{count} lỗi"
+      size:
+        one: "Form có chứa %{size} lỗi"
+        other: "Form có chứa %{size} lỗi"
+    micropost_form:
+      placeholder: "Soạn bài đăng mới..."
+      post: "Đăng bài"
+      micropost_form_notify: "Kích thước tệp tối đa là 5MB. Vui lòng chọn một tập tin nhỏ hơn."
+    user_info:
+      view: "Hồ sơ"
+      micropost: "Bài đăng"
   sessions:
     new:
       sign-in: "Đăng nhập"
@@ -134,6 +145,7 @@ vi:
   password_resets:
     valid_user: "Thất bại!"
     danger_email: "Email không tồn tại."
+    danger: "Email không tồn tại."
     edit:
       title: "Đặt lại mật khẩu"
       txt1: "Đặt lại mật khẩu"
@@ -158,5 +170,22 @@ vi:
   user_mailer:
     acc_acti: "Kích hoạt tài khoản thành công!"
     password_reset: "Đặt lại mật khẩu"
-
-
+    update:
+      text1: "không thể để trống"
+      text2: "Mật khẩu đã được đặt lại."
+    check_expiration:
+      password_reset: "Đặt lại mật khẩu đã hết hạn."
+  microposts:
+    create:
+      success: "Đăng bài viết thành công!"
+    micropost:
+      time_posted: "Bài đăng %{time} trước."
+      delete: "Xóa"
+      question: "Bạn có chắc chắn?"
+      should_be_less: "nên dưới 5MB"
+    destroy:
+      danger: "That bai!"
+      success: "Xóa bài đăng thành công!"
+  user_mailer:
+    acc_acti: "Kích hoạt tài khoản thành công!"
+    password_reset: "Đặt lại mật khẩu!"
